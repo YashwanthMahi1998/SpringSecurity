@@ -24,7 +24,7 @@ import com.learn.springsecurity.service.UserInfoService;
 @EnableWebSecurity
 @EnableMethodSecurity
 public class SecurityConfig { 
-	
+	 
 	@Autowired
 	private JwtAuthFilter jwtAuthFilter;
 	

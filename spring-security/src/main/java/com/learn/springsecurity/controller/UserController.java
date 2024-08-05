@@ -21,7 +21,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 @RestController
 @RequestMapping("/auth")
 public class UserController {
-	 
+	  
 	@Autowired
 	private UserInfoService userInfoService;
 	
