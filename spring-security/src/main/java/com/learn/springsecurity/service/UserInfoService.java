@@ -26,7 +26,7 @@ public class UserInfoService implements UserDetailsService{
 		// TODO Auto-generated method stub
 		Optional<UserInfo>userDetail=userInfoRepository.findByName(username);
 		//return userDetail.map(UserInfoDetails::new)
-				//.orElseThrow(()->new UsernameNotFoundException("User Not Found"+username));
+	 			//.orElseThrow(()->new UsernameNotFoundException("User Not Found"+username));
 		return userDetail.map(UserInfoDetails::new)
 				.orElseThrow(()-> new UsernameNotFoundException("User Not Found"+username));
 	}
